@@ -1,11 +1,37 @@
+@import "../base/mixin.less";
+@import "../base/variables.less";
+
 .advantages__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  .list-reset();
 }
 
-.advantages__item {
-  padding: 33px 18px;
+.advantage__blue-content {
+  padding: 37px 18px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.advantage__description {
+  margin: 0;
+  text-align: center;
+}
+
+.advantages__town-list {
+  .list-reset();
+  background-color: @white;
+  padding: 23px 18px 46px;
+}
+
+.advantages__town-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.advantage__town-description {
+  color: #333333;
 }
 
 .advantages__item--triangle {
@@ -16,24 +42,25 @@
 }
 
 .advantages__item--background-blue {
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: @blue;
+  color: @white;
   text-align: center;
 }
 
 .advantages__item--background-gray {
   background-color: #eeeeee;
   text-align: center;
+  padding: 24px 26px;
 }
 
 .title--white {
-  color: #ffffff;
+  color: @white;
 }
 
 .advantages__item--image {
   padding: 0;
 }
 
-.advantages__item--image img {
+.advantages__item--background-blue img {
   display: block;
 }
